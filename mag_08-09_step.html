@@ -1,0 +1,702 @@
+
+  <!doctype html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌌</text></svg>">
+      <title>Legacy Stamps Analysis</title>
+      <meta name="image" content="cover.jpg" />
+      <meta name="og:image" content="cover.jpg" />
+      <meta name="twitter:image" content="cover.jpg" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
+      <style>
+      a.zoom:hover {
+        cursor: zoom-in;
+      }
+      </style>
+    </head>
+    
+    <body>
+      <nav class="navbar bg-body-tertiary mb-4">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">🌌 Legacy Stamps Analysis</span>
+        </div>
+      </nav>
+      
+      <div class="mb-3">
+        <b>Correction factor (&eta;) interpolation: </b> 
+        <ul class="nav nav-pills d-inline-flex">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Step</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mag_08-09_linear.html">Linear</a>
+          </li>
+        </ul>
+      </div>
+      
+      
+  <ul class="nav nav-tabs">
+    
+      <li class="nav-item">
+        <a class="nav-link active" href="#">
+          mag<sub>r</sub> 8-9
+        </a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link " href="mag_09-10_step.html">
+          mag<sub>r</sub> 9-10
+        </a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link " href="mag_10-11_step.html">
+          mag<sub>r</sub> 10-11
+        </a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link " href="mag_11-12_step.html">
+          mag<sub>r</sub> 11-12
+        </a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link " href="mag_12-13_step.html">
+          mag<sub>r</sub> 12-13
+        </a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link " href="mag_13-14_step.html">
+          mag<sub>r</sub> 13-14
+        </a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link " href="mag_14-15_step.html">
+          mag<sub>r</sub> 14-15
+        </a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link " href="mag_15-16_step.html">
+          mag<sub>r</sub> 15-16
+        </a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link " href="mag_16-17_step.html">
+          mag<sub>r</sub> 16-17
+        </a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link " href="mag_17-18_step.html">
+          mag<sub>r</sub> 17-18
+        </a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link " href="mag_18-19_step.html">
+          mag<sub>r</sub> 18-19
+        </a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link " href="mag_19-20_step.html">
+          mag<sub>r</sub> 19-20
+        </a>
+      </li>
+    
+  </ul>
+  
+    
+      <div class="position-relative">
+        <table class="table table-striped table-hover w-100">
+          <thead class="sticky-top top-0">
+            <tr class="border-bottom">
+              <th scope="col">#</th>
+              <th scope="col">mag<sub>r</sub></th>
+              
+              <th scope="col">&eta;<sub>ellip</sub></th>
+              <th scope="col">s<sub>ellip</sub></th>
+              <th scope="col">fov<sub>ellip</sub></th>
+              
+              <th scope="col">&eta;<sub>circ</sub></th>
+              <th scope="col">s<sub>circ</sub></th>
+              <th scope="col">fov<sub>circ</sub></th>
+              
+              <th scope="col">ellipse fit (s<sub>base</sub>)</th>
+              <th scope="col">ellipse crop (s<sub>ellip</sub>)</th>
+              <th scope="col">circle fit (s<sub>base</sub>)</th>
+              <th scope="col">circle crop (s<sub>circ</sub>)</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+      <tr class="table-info">
+        <th scope="row">1</th>
+        <td>8.323</td>
+        
+        <td>10.50</td>
+        <td><span class="text-danger">6.2130</span></td>
+        <td>1863.89''</td>
+        
+        <td>11.50</td>
+        <td><span class="text-danger">41.5257</span></td>
+        <td>12457.70''</td>
+        
+        <td>
+          <a class="zoom" href="stamps/8/J004708.09-204529.0_5.0000_ellip+bb.jpg" data-lightbox="row-1" data-title="Ellipse fit">
+            <img loading="lazy" src="stamps/8/J004708.09-204529.0_5.0000_ellip+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J004708.09-204529.0_6.2130.jpg" data-lightbox="row-1" data-title="Ellipse crop">
+            <img loading="lazy" src="stamps/8/J004708.09-204529.0_6.2130.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J004708.09-204529.0_5.0000_circle+bb.jpg" data-lightbox="row-1" data-title="Circle fit">
+            <img loading="lazy" src="stamps/8/J004708.09-204529.0_5.0000_circle+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J004708.09-204529.0_41.5257.jpg" data-lightbox="row-1" data-title="Circle crop">
+            <img loading="lazy" src="stamps/8/J004708.09-204529.0_41.5257.jpg" width="150" />
+          </a>
+        </td>
+      </tr>
+    
+      <tr class="table-info">
+        <th scope="row">2</th>
+        <td>8.599</td>
+        
+        <td>10.50</td>
+        <td><span class="text-success">4.9298</span></td>
+        <td>1478.93''</td>
+        
+        <td>11.50</td>
+        <td><span class="text-danger">16.1734</span></td>
+        <td>4852.01''</td>
+        
+        <td>
+          <a class="zoom" href="stamps/8/J005453.67-374102.7_5.0000_ellip+bb.jpg" data-lightbox="row-2" data-title="Ellipse fit">
+            <img loading="lazy" src="stamps/8/J005453.67-374102.7_5.0000_ellip+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J005453.67-374102.7_4.9298.jpg" data-lightbox="row-2" data-title="Ellipse crop">
+            <img loading="lazy" src="stamps/8/J005453.67-374102.7_4.9298.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J005453.67-374102.7_5.0000_circle+bb.jpg" data-lightbox="row-2" data-title="Circle fit">
+            <img loading="lazy" src="stamps/8/J005453.67-374102.7_5.0000_circle+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J005453.67-374102.7_16.1734.jpg" data-lightbox="row-2" data-title="Circle crop">
+            <img loading="lazy" src="stamps/8/J005453.67-374102.7_16.1734.jpg" width="150" />
+          </a>
+        </td>
+      </tr>
+    
+      <tr class="">
+        <th scope="row">3</th>
+        <td>8.199</td>
+        
+        <td>10.50</td>
+        <td><span class="text-success">4.4991</span></td>
+        <td>1349.73''</td>
+        
+        <td>11.50</td>
+        <td><span class="text-danger">6.5343</span></td>
+        <td>1960.30''</td>
+        
+        <td>
+          <a class="zoom" href="stamps/8/J032241.70-371228.9_5.0000_ellip+bb.jpg" data-lightbox="row-3" data-title="Ellipse fit">
+            <img loading="lazy" src="stamps/8/J032241.70-371228.9_5.0000_ellip+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J032241.70-371228.9_4.4991.jpg" data-lightbox="row-3" data-title="Ellipse crop">
+            <img loading="lazy" src="stamps/8/J032241.70-371228.9_4.4991.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J032241.70-371228.9_5.0000_circle+bb.jpg" data-lightbox="row-3" data-title="Circle fit">
+            <img loading="lazy" src="stamps/8/J032241.70-371228.9_5.0000_circle+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J032241.70-371228.9_6.5343.jpg" data-lightbox="row-3" data-title="Circle crop">
+            <img loading="lazy" src="stamps/8/J032241.70-371228.9_6.5343.jpg" width="150" />
+          </a>
+        </td>
+      </tr>
+    
+      <tr class="table-info">
+        <th scope="row">4</th>
+        <td>8.835</td>
+        
+        <td>10.50</td>
+        <td><span class="text-success">4.3992</span></td>
+        <td>1319.76''</td>
+        
+        <td>11.50</td>
+        <td><span class="text-danger">11.9835</span></td>
+        <td>3595.06''</td>
+        
+        <td>
+          <a class="zoom" href="stamps/8/J125026.57+253002.9_5.0000_ellip+bb.jpg" data-lightbox="row-4" data-title="Ellipse fit">
+            <img loading="lazy" src="stamps/8/J125026.57+253002.9_5.0000_ellip+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J125026.57+253002.9_4.3992.jpg" data-lightbox="row-4" data-title="Ellipse crop">
+            <img loading="lazy" src="stamps/8/J125026.57+253002.9_4.3992.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J125026.57+253002.9_5.0000_circle+bb.jpg" data-lightbox="row-4" data-title="Circle fit">
+            <img loading="lazy" src="stamps/8/J125026.57+253002.9_5.0000_circle+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J125026.57+253002.9_11.9835.jpg" data-lightbox="row-4" data-title="Circle crop">
+            <img loading="lazy" src="stamps/8/J125026.57+253002.9_11.9835.jpg" width="150" />
+          </a>
+        </td>
+      </tr>
+    
+      <tr class="">
+        <th scope="row">5</th>
+        <td>8.632</td>
+        
+        <td>10.50</td>
+        <td><span class="text-success">4.6079</span></td>
+        <td>1382.37''</td>
+        
+        <td>11.50</td>
+        <td><span class="text-success">4.2604</span></td>
+        <td>1278.12''</td>
+        
+        <td>
+          <a class="zoom" href="stamps/8/J124339.98+113309.6_5.0000_ellip+bb.jpg" data-lightbox="row-5" data-title="Ellipse fit">
+            <img loading="lazy" src="stamps/8/J124339.98+113309.6_5.0000_ellip+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J124339.98+113309.6_4.6079.jpg" data-lightbox="row-5" data-title="Ellipse crop">
+            <img loading="lazy" src="stamps/8/J124339.98+113309.6_4.6079.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J124339.98+113309.6_5.0000_circle+bb.jpg" data-lightbox="row-5" data-title="Circle fit">
+            <img loading="lazy" src="stamps/8/J124339.98+113309.6_5.0000_circle+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J124339.98+113309.6_4.2604.jpg" data-lightbox="row-5" data-title="Circle crop">
+            <img loading="lazy" src="stamps/8/J124339.98+113309.6_4.2604.jpg" width="150" />
+          </a>
+        </td>
+      </tr>
+    
+      <tr class="">
+        <th scope="row">6</th>
+        <td>8.215</td>
+        
+        <td>10.50</td>
+        <td><span class="text-success">4.4850</span></td>
+        <td>1345.51''</td>
+        
+        <td>11.50</td>
+        <td><span class="text-danger">6.3331</span></td>
+        <td>1899.92''</td>
+        
+        <td>
+          <a class="zoom" href="stamps/8/J122946.79+080001.9_5.0000_ellip+bb.jpg" data-lightbox="row-6" data-title="Ellipse fit">
+            <img loading="lazy" src="stamps/8/J122946.79+080001.9_5.0000_ellip+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J122946.79+080001.9_4.4850.jpg" data-lightbox="row-6" data-title="Ellipse crop">
+            <img loading="lazy" src="stamps/8/J122946.79+080001.9_4.4850.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J122946.79+080001.9_5.0000_circle+bb.jpg" data-lightbox="row-6" data-title="Circle fit">
+            <img loading="lazy" src="stamps/8/J122946.79+080001.9_5.0000_circle+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J122946.79+080001.9_6.3331.jpg" data-lightbox="row-6" data-title="Circle crop">
+            <img loading="lazy" src="stamps/8/J122946.79+080001.9_6.3331.jpg" width="150" />
+          </a>
+        </td>
+      </tr>
+    
+      <tr class="">
+        <th scope="row">7</th>
+        <td>8.653</td>
+        
+        <td>10.50</td>
+        <td><span class="text-danger">5.4454</span></td>
+        <td>1633.62''</td>
+        
+        <td>11.50</td>
+        <td><span class="text-danger">6.7297</span></td>
+        <td>2018.92''</td>
+        
+        <td>
+          <a class="zoom" href="stamps/8/J112014.95+125928.8_5.0000_ellip+bb.jpg" data-lightbox="row-7" data-title="Ellipse fit">
+            <img loading="lazy" src="stamps/8/J112014.95+125928.8_5.0000_ellip+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J112014.95+125928.8_5.4454.jpg" data-lightbox="row-7" data-title="Ellipse crop">
+            <img loading="lazy" src="stamps/8/J112014.95+125928.8_5.4454.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J112014.95+125928.8_5.0000_circle+bb.jpg" data-lightbox="row-7" data-title="Circle fit">
+            <img loading="lazy" src="stamps/8/J112014.95+125928.8_5.0000_circle+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J112014.95+125928.8_6.7297.jpg" data-lightbox="row-7" data-title="Circle crop">
+            <img loading="lazy" src="stamps/8/J112014.95+125928.8_6.7297.jpg" width="150" />
+          </a>
+        </td>
+      </tr>
+    
+      <tr class="">
+        <th scope="row">8</th>
+        <td>8.890</td>
+        
+        <td>10.50</td>
+        <td><span class="text-success">4.2539</span></td>
+        <td>1276.16''</td>
+        
+        <td>11.50</td>
+        <td><span class="text-success">4.3379</span></td>
+        <td>1301.38''</td>
+        
+        <td>
+          <a class="zoom" href="stamps/8/J122503.75+125313.2_5.0000_ellip+bb.jpg" data-lightbox="row-8" data-title="Ellipse fit">
+            <img loading="lazy" src="stamps/8/J122503.75+125313.2_5.0000_ellip+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J122503.75+125313.2_4.2539.jpg" data-lightbox="row-8" data-title="Ellipse crop">
+            <img loading="lazy" src="stamps/8/J122503.75+125313.2_4.2539.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J122503.75+125313.2_5.0000_circle+bb.jpg" data-lightbox="row-8" data-title="Circle fit">
+            <img loading="lazy" src="stamps/8/J122503.75+125313.2_5.0000_circle+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J122503.75+125313.2_4.3379.jpg" data-lightbox="row-8" data-title="Circle crop">
+            <img loading="lazy" src="stamps/8/J122503.75+125313.2_4.3379.jpg" width="150" />
+          </a>
+        </td>
+      </tr>
+    
+      <tr class="">
+        <th scope="row">9</th>
+        <td>8.898</td>
+        
+        <td>10.50</td>
+        <td><span class="text-success">4.4211</span></td>
+        <td>1326.32''</td>
+        
+        <td>11.50</td>
+        <td><span class="text-success">2.7423</span></td>
+        <td>822.70''</td>
+        
+        <td>
+          <a class="zoom" href="stamps/8/J024240.69-000047.1_5.0000_ellip+bb.jpg" data-lightbox="row-9" data-title="Ellipse fit">
+            <img loading="lazy" src="stamps/8/J024240.69-000047.1_5.0000_ellip+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J024240.69-000047.1_4.4211.jpg" data-lightbox="row-9" data-title="Ellipse crop">
+            <img loading="lazy" src="stamps/8/J024240.69-000047.1_4.4211.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J024240.69-000047.1_5.0000_circle+bb.jpg" data-lightbox="row-9" data-title="Circle fit">
+            <img loading="lazy" src="stamps/8/J024240.69-000047.1_5.0000_circle+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J024240.69-000047.1_2.7423.jpg" data-lightbox="row-9" data-title="Circle crop">
+            <img loading="lazy" src="stamps/8/J024240.69-000047.1_2.7423.jpg" width="150" />
+          </a>
+        </td>
+      </tr>
+    
+      <tr class="">
+        <th scope="row">10</th>
+        <td>8.260</td>
+        
+        <td>10.50</td>
+        <td><span class="text-danger">5.0832</span></td>
+        <td>1524.97''</td>
+        
+        <td>11.50</td>
+        <td><span class="text-danger">6.9236</span></td>
+        <td>2077.07''</td>
+        
+        <td>
+          <a class="zoom" href="stamps/8/J125643.44+214055.1_5.0000_ellip+bb.jpg" data-lightbox="row-10" data-title="Ellipse fit">
+            <img loading="lazy" src="stamps/8/J125643.44+214055.1_5.0000_ellip+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J125643.44+214055.1_5.0832.jpg" data-lightbox="row-10" data-title="Ellipse crop">
+            <img loading="lazy" src="stamps/8/J125643.44+214055.1_5.0832.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J125643.44+214055.1_5.0000_circle+bb.jpg" data-lightbox="row-10" data-title="Circle fit">
+            <img loading="lazy" src="stamps/8/J125643.44+214055.1_5.0000_circle+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J125643.44+214055.1_6.9236.jpg" data-lightbox="row-10" data-title="Circle crop">
+            <img loading="lazy" src="stamps/8/J125643.44+214055.1_6.9236.jpg" width="150" />
+          </a>
+        </td>
+      </tr>
+    
+      <tr class="">
+        <th scope="row">11</th>
+        <td>8.487</td>
+        
+        <td>10.50</td>
+        <td><span class="text-success">4.7094</span></td>
+        <td>1412.81''</td>
+        
+        <td>11.50</td>
+        <td><span class="text-success">4.7834</span></td>
+        <td>1435.01''</td>
+        
+        <td>
+          <a class="zoom" href="stamps/8/J031718.57-410628.8_5.0000_ellip+bb.jpg" data-lightbox="row-11" data-title="Ellipse fit">
+            <img loading="lazy" src="stamps/8/J031718.57-410628.8_5.0000_ellip+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J031718.57-410628.8_4.7094.jpg" data-lightbox="row-11" data-title="Ellipse crop">
+            <img loading="lazy" src="stamps/8/J031718.57-410628.8_4.7094.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J031718.57-410628.8_5.0000_circle+bb.jpg" data-lightbox="row-11" data-title="Circle fit">
+            <img loading="lazy" src="stamps/8/J031718.57-410628.8_5.0000_circle+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J031718.57-410628.8_4.7834.jpg" data-lightbox="row-11" data-title="Circle crop">
+            <img loading="lazy" src="stamps/8/J031718.57-410628.8_4.7834.jpg" width="150" />
+          </a>
+        </td>
+      </tr>
+    
+      <tr class="">
+        <th scope="row">12</th>
+        <td>8.884</td>
+        
+        <td>10.50</td>
+        <td><span class="text-success">4.4439</span></td>
+        <td>1333.18''</td>
+        
+        <td>11.50</td>
+        <td><span class="text-danger">5.4108</span></td>
+        <td>1623.23''</td>
+        
+        <td>
+          <a class="zoom" href="stamps/8/J104645.73+114912.5_5.0000_ellip+bb.jpg" data-lightbox="row-12" data-title="Ellipse fit">
+            <img loading="lazy" src="stamps/8/J104645.73+114912.5_5.0000_ellip+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J104645.73+114912.5_4.4439.jpg" data-lightbox="row-12" data-title="Ellipse crop">
+            <img loading="lazy" src="stamps/8/J104645.73+114912.5_4.4439.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J104645.73+114912.5_5.0000_circle+bb.jpg" data-lightbox="row-12" data-title="Circle fit">
+            <img loading="lazy" src="stamps/8/J104645.73+114912.5_5.0000_circle+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J104645.73+114912.5_5.4108.jpg" data-lightbox="row-12" data-title="Circle crop">
+            <img loading="lazy" src="stamps/8/J104645.73+114912.5_5.4108.jpg" width="150" />
+          </a>
+        </td>
+      </tr>
+    
+      <tr class="">
+        <th scope="row">13</th>
+        <td>8.624</td>
+        
+        <td>10.50</td>
+        <td><span class="text-success">4.4955</span></td>
+        <td>1348.65''</td>
+        
+        <td>11.50</td>
+        <td><span class="text-danger">8.7177</span></td>
+        <td>2615.32''</td>
+        
+        <td>
+          <a class="zoom" href="stamps/8/J122611.77+125646.6_5.0000_ellip+bb.jpg" data-lightbox="row-13" data-title="Ellipse fit">
+            <img loading="lazy" src="stamps/8/J122611.77+125646.6_5.0000_ellip+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J122611.77+125646.6_4.4955.jpg" data-lightbox="row-13" data-title="Ellipse crop">
+            <img loading="lazy" src="stamps/8/J122611.77+125646.6_4.4955.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J122611.77+125646.6_5.0000_circle+bb.jpg" data-lightbox="row-13" data-title="Circle fit">
+            <img loading="lazy" src="stamps/8/J122611.77+125646.6_5.0000_circle+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J122611.77+125646.6_8.7177.jpg" data-lightbox="row-13" data-title="Circle crop">
+            <img loading="lazy" src="stamps/8/J122611.77+125646.6_8.7177.jpg" width="150" />
+          </a>
+        </td>
+      </tr>
+    
+      <tr class="">
+        <th scope="row">14</th>
+        <td>8.629</td>
+        
+        <td>10.50</td>
+        <td><span class="text-success">4.3224</span></td>
+        <td>1296.72''</td>
+        
+        <td>11.50</td>
+        <td><span class="text-success">4.2526</span></td>
+        <td>1275.77''</td>
+        
+        <td>
+          <a class="zoom" href="stamps/8/J123049.43+122328.3_5.0000_ellip+bb.jpg" data-lightbox="row-14" data-title="Ellipse fit">
+            <img loading="lazy" src="stamps/8/J123049.43+122328.3_5.0000_ellip+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J123049.43+122328.3_4.3224.jpg" data-lightbox="row-14" data-title="Ellipse crop">
+            <img loading="lazy" src="stamps/8/J123049.43+122328.3_4.3224.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J123049.43+122328.3_5.0000_circle+bb.jpg" data-lightbox="row-14" data-title="Circle fit">
+            <img loading="lazy" src="stamps/8/J123049.43+122328.3_5.0000_circle+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J123049.43+122328.3_4.2526.jpg" data-lightbox="row-14" data-title="Circle crop">
+            <img loading="lazy" src="stamps/8/J123049.43+122328.3_4.2526.jpg" width="150" />
+          </a>
+        </td>
+      </tr>
+    
+      <tr class="">
+        <th scope="row">15</th>
+        <td>8.998</td>
+        
+        <td>10.50</td>
+        <td><span class="text-success">4.8564</span></td>
+        <td>1456.92''</td>
+        
+        <td>11.50</td>
+        <td><span class="text-danger">8.6659</span></td>
+        <td>2599.78''</td>
+        
+        <td>
+          <a class="zoom" href="stamps/8/J024618.96-301628.7_5.0000_ellip+bb.jpg" data-lightbox="row-15" data-title="Ellipse fit">
+            <img loading="lazy" src="stamps/8/J024618.96-301628.7_5.0000_ellip+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J024618.96-301628.7_4.8564.jpg" data-lightbox="row-15" data-title="Ellipse crop">
+            <img loading="lazy" src="stamps/8/J024618.96-301628.7_4.8564.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J024618.96-301628.7_5.0000_circle+bb.jpg" data-lightbox="row-15" data-title="Circle fit">
+            <img loading="lazy" src="stamps/8/J024618.96-301628.7_5.0000_circle+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J024618.96-301628.7_8.6659.jpg" data-lightbox="row-15" data-title="Circle crop">
+            <img loading="lazy" src="stamps/8/J024618.96-301628.7_8.6659.jpg" width="150" />
+          </a>
+        </td>
+      </tr>
+    
+      <tr class="">
+        <th scope="row">16</th>
+        <td>8.578</td>
+        
+        <td>10.50</td>
+        <td><span class="text-success">4.7288</span></td>
+        <td>1418.65''</td>
+        
+        <td>11.50</td>
+        <td><span class="text-danger">5.7855</span></td>
+        <td>1735.64''</td>
+        
+        <td>
+          <a class="zoom" href="stamps/8/J100513.93-074306.9_5.0000_ellip+bb.jpg" data-lightbox="row-16" data-title="Ellipse fit">
+            <img loading="lazy" src="stamps/8/J100513.93-074306.9_5.0000_ellip+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J100513.93-074306.9_4.7288.jpg" data-lightbox="row-16" data-title="Ellipse crop">
+            <img loading="lazy" src="stamps/8/J100513.93-074306.9_4.7288.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J100513.93-074306.9_5.0000_circle+bb.jpg" data-lightbox="row-16" data-title="Circle fit">
+            <img loading="lazy" src="stamps/8/J100513.93-074306.9_5.0000_circle+bb.jpg" width="150" />
+          </a>
+        </td>
+        <td>
+          <a class="zoom" href="stamps/8/J100513.93-074306.9_5.7855.jpg" data-lightbox="row-16" data-title="Circle crop">
+            <img loading="lazy" src="stamps/8/J100513.93-074306.9_5.7855.jpg" width="150" />
+          </a>
+        </td>
+      </tr>
+    
+          </tbody>
+        </table>
+      </div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+      <script>
+        lightbox.option({
+          'resizeDuration': 50,
+          'fadeDuration': 50,
+          'imageFadeDuration': 50,
+          'resizeDuration': 50,
+          'wrapAround': true
+        })
+      </script>
+    </body>
+  </html>
+  
